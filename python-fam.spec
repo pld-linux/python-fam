@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
 # Source0-md5:	68e1a9ab61bdaf2954a305f007694f7c
 URL:		http://python-fam.sf.net/
 BuildRequires:	perl-base
-BuildRequires:	python-devel >= 2.3
+BuildRequires:	python-devel >= 1:2.3
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
