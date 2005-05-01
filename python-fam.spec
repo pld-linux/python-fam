@@ -20,7 +20,7 @@ Python FAM provides a Python module to use the File Alteration Monitor
 %description -l pl
 Python FAM to modu³ pozwalaj±cy korzystaæ z File Alternation Monitor
 (monitora zmian plików). Wiêcej informacji o FAM dostêpne jest na
-stronie http://oss.sgi.com/projects/fam/ .
+stronie <http://oss.sgi.com/projects/fam/>.
 
 %prep
 %setup -q
