@@ -1,12 +1,12 @@
 Summary:	Python interface to FAM (File Alternation Monitor)
 Summary(pl):	Interfejs do FAM (File Alternation Monitor) dla Pythona
 Name:		python-fam
-Version:	1.0.2
-Release:	2
+Version:	1.1.1
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
-# Source0-md5:	68e1a9ab61bdaf2954a305f007694f7c
+# Source0-md5:	f6c760c6d8e5ea69a3fce029f7973558
 URL:		http://python-fam.sf.net/
 BuildRequires:	perl-base
 BuildRequires:	python-devel >= 1:2.3
@@ -26,15 +26,13 @@ stronie <http://oss.sgi.com/projects/fam/>.
 %setup -q
 
 %build
-%{__perl} -pi -e 's/python2.2/python%{py_ver}/' Makefile
-%{__make}
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{py_sitedir},%{_examplesdir}/%{name}-%{release}}
-
-install _fam.so $RPM_BUILD_ROOT%{py_sitedir}
-install test.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{release}
+%{__python} setup.py install --root=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
+install test*.py $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -42,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{py_sitedir}/_fam.so
-%{_examplesdir}/%{name}-%{release}
+%{_examplesdir}/%{name}-%{version}
