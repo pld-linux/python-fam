@@ -7,7 +7,7 @@ License:	LGPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
 # Source0-md5:	f6c760c6d8e5ea69a3fce029f7973558
-URL:		http://python-fam.sf.net/
+URL:		http://python-fam.sourceforge.net/
 BuildRequires:	perl-base
 BuildRequires:	python-devel >= 1:2.3
 %pyrequires_eq	python-modules
@@ -31,8 +31,8 @@ stronie <http://oss.sgi.com/projects/fam/>.
 %install
 rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install --root=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
-install test*.py $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install test*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
