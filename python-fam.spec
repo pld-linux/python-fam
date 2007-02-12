@@ -1,5 +1,5 @@
 Summary:	Python interface to FAM (File Alternation Monitor)
-Summary(pl):	Interfejs do FAM (File Alternation Monitor) dla Pythona
+Summary(pl.UTF-8):   Interfejs do FAM (File Alternation Monitor) dla Pythona
 Name:		python-fam
 Version:	1.1.1
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Python FAM provides a Python module to use the File Alteration Monitor
 (http://oss.sgi.com/projects/fam/) in Python.
 
-%description -l pl
-Python FAM to modu³ pozwalaj±cy korzystaæ z File Alternation Monitor
-(monitora zmian plików). Wiêcej informacji o FAM dostêpne jest na
+%description -l pl.UTF-8
+Python FAM to moduÅ‚ pozwalajÄ…cy korzystaÄ‡ z File Alternation Monitor
+(monitora zmian plikÃ³w). WiÄ™cej informacji o FAM dostÄ™pne jest na
 stronie <http://oss.sgi.com/projects/fam/>.
 
 %prep
