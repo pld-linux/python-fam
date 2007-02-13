@@ -1,5 +1,5 @@
 Summary:	Python interface to FAM (File Alternation Monitor)
-Summary(pl.UTF-8):   Interfejs do FAM (File Alternation Monitor) dla Pythona
+Summary(pl.UTF-8):	Interfejs do FAM (File Alternation Monitor) dla Pythona
 Name:		python-fam
 Version:	1.1.1
 Release:	1
