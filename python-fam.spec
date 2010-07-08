@@ -2,7 +2,7 @@ Summary:	Python interface to FAM (File Alternation Monitor)
 Summary(pl.UTF-8):	Interfejs do FAM (File Alternation Monitor) dla Pythona
 Name:		python-fam
 Version:	1.1.1
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Development/Languages/Python
 Source0:	http://dl.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
