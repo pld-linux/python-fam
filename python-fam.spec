@@ -5,11 +5,13 @@ Version:	1.1.1
 Release:	3
 License:	LGPL
 Group:		Development/Languages/Python
-Source0:	http://dl.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
 # Source0-md5:	f6c760c6d8e5ea69a3fce029f7973558
 URL:		http://python-fam.sourceforge.net/
-BuildRequires:	perl-base
+BuildRequires:	fam-devel
 BuildRequires:	python-devel >= 1:2.3
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
