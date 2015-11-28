@@ -28,11 +28,11 @@ stronie <http://oss.sgi.com/projects/fam/>.
 %setup -q
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install --root=$RPM_BUILD_ROOT
+%py_install
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install test*.py $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
