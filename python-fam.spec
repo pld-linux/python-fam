@@ -8,6 +8,7 @@ Group:		Development/Languages/Python
 Source0:	http://downloads.sourceforge.net/python-fam/%{name}-%{version}.tar.gz
 # Source0-md5:	f6c760c6d8e5ea69a3fce029f7973558
 URL:		http://python-fam.sourceforge.net/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	fam-devel
 BuildRequires:	python-devel >= 1:2.3
 BuildRequires:	python-modules
